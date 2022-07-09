@@ -1,0 +1,123 @@
+.historyCalendar {
+  margin-bottom: 3rem;
+}
+
+.containerCalendars {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 100%;
+  /* margin-bottom: 3rem; */
+}
+
+.lengend-performance {
+  width: 100%;
+  max-width: 400px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: auto;
+  margin-bottom: 2rem;
+
+  font-size: 0.8rem;
+}
+
+.lengend-performance .legend-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lengend-performance .legend-item span {
+  width: 15px;
+  height: 15px;
+  border-radius: 3rem;
+  margin-right: 0.25rem;
+}
+
+.lengend-performance .legend-item .green {
+  background: green;
+}
+
+.lengend-performance .legend-item .orange {
+  background: orange;
+}
+
+.lengend-performance .legend-item .red {
+  background: red;
+}
+
+.myCalendar {
+  font-family: sans-serif;
+  border: 1px solid #ccc;
+  margin-bottom: 2rem;
+}
+
+.myCalendar header.rc_header {
+  margin: 0 !important;
+  font-weight: bold;
+}
+
+.myCalendar .rc_header_nav span {
+  display: none;
+}
+
+/* Selected */
+.myCalendar .rc_body-days-of-month .rc_body-cell.rc_selected button {
+  color: #fff;
+}
+
+.myCalendar
+  .rc_body-days-of-month
+  .rc_body-cell.rc_selected
+  .rc_body-cell_value {
+  background-color: inherit;
+}
+
+.myCalendar
+  .rc_body-days-of-month
+  .rc_body-cell.rc_selected.rc_wknd
+  .rc_body-cell_value {
+  background-color: inherit;
+}
+
+.myCalendar .rc_body-days-of-month .rc_body-cell.rc_selected.rc_wknd button {
+  color: #fff !important;
+}
+
+.myCalendar .rc_body-days-of-month .rc_body-cell.rc_wknd button {
+  color: inherit;
+}
+
+.myCalendar .rc_selected button {
+  background: green;
+}
+
+.myCalendar .rc_selected.rc_disabled button {
+  background: red;
+  text-decoration: none !important;
+  z-index: 999999 !important;
+  text-rendering: none;
+  writing-mode: none !important;
+  text-transform: none !important;
+}
+
+.myCalendar .rc_body-days-of-month .rc_body-cell .rc_body-cell_value button {
+  border-radius: 1rem;
+  border: inherit;
+}
+
+.myCalendar
+  .rc_body-days-of-month
+  .rc_body-cell.rc_disabled
+  .rc_body-cell_value
+  button::before {
+  display: none;
+}
+
+.myCalendar .rc_selected.rc_highlight button {
+  background: orange;
+}
